@@ -1145,7 +1145,7 @@ const topicImages = {
     'portion-sizes': ['Images/web_page-0009.jpg', 'Images/web_page-0010.jpg'],
     'diet-quality': [
         'Images/web_page-0011.jpg',
-        'Imagesweb_page-0012.jpg'
+        'Images/web_page-0012.jpg'
     
     ],
     'recipes': [
@@ -1156,7 +1156,8 @@ const topicImages = {
         'Images/web_page-0014.jpg',
         'Images/web_page-0015.jpg',
         'Images/web_page-0016.jpg',
-        'Images/web_page-0017.jpg'
+        'Images/web_page-0017.jpg',
+        'Images/web_page-0018.jpg'
         
     ],
     'basket': [
