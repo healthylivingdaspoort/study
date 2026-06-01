@@ -16,7 +16,7 @@ const translations = {
     // Static UI translations
     ui: {
         en: {
-            hero_title: "Welcome to Healthy Living",
+            hero_title: "Welcome to Healthy Living Daspoort",
             hero_subtitle: "Empowering you with affordable, practical ways to manage overweight and obesity. By Mmakou M.N & Sekgobela T,In Partnership with Raganya S.E",
             section_learn: "Understanding Weight & Obesity",
             section_diet: "Diet & Portion Management",
@@ -57,7 +57,7 @@ const translations = {
             nav_contact: "Contact Us"
         },
         nso: { // Sepedi (Northern Sotho)
-            hero_title: "O amogetšwe go Healthy Living",
+            hero_title: "O amogetšwe go Healthy Living Daspoort",
             hero_subtitle: "Go go thuša ka ditsela tša go laola go nona go fetisisa ka mokgwa wa go boloka tšhelete. By Mmakou M.N & Sekgobela T,In Partnership with Raganya S.E",
             section_learn: "Go Kwešiša Boima le go Nona go Feteletseng",
             section_diet: "Taolo ya Dijo le Portion ya gago",
@@ -98,7 +98,7 @@ const translations = {
             nav_contact: "Ikgokaganye"
         },
         sn: { // Shona
-            hero_title: "Tikugamuchirai ku Healthy Living",
+            hero_title: "Tikugamuchirai ku Healthy Living Daspoort",
             hero_subtitle: "Kukubatsirai nenzira dzakachipa uye dzinoshanda dzokubata nadzo kufuta zvakapfurikidza. By Mmakou M.N & Sekgobela T,In Partnership with Raganya S.E",
             section_learn: "Kunzwisisa Huremu & Kufuta Kwazvo",
             section_diet: "Kugadzirisa Zvikafu & Zvidimbu Zvinodyiwa",
