@@ -1149,9 +1149,7 @@ const topicImages = {
     
     ],
     'recipes': [
-        'Images/web_page-0009.jpg',
-        'Images/web_page-0011.jpg',
-        'Images/web_page-0012.jpg',
+        
         'Images/web_page-0013.jpg',
         'Images/web_page-0014.jpg',
         'Images/web_page-0015.jpg',
