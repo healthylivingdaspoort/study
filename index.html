@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Living</title>
+    <!-- Google Fonts: Outfit & Inter for premium, modern typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for beautiful modern icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- TOP FLOATING HEADER -->
+    <header class="top-header">
+        <div class="header-container">
+            <div class="logo-area" id="btn-header-logo">
+                <div class="logo-icon">
+                    <i class=""><img src="logo.png" alt="Logo" width="45"></i>
+                </div>
+                <span class="logo-text">Healthy Living</span>
+            </div>
+            
+            <div class="translation-wrapper">
+                <button class="translate-btn" id="translate-trigger">
+                    <i class="fa-solid fa-globe"></i>
+                    <span id="current-lang-label">English</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="translate-dropdown" id="translate-menu">
+                    <button class="lang-option active" data-lang="en">
+                        <span>English</span>
+                        <i class="fa-solid fa-check"></i>
+                    </button>
+                    <button class="lang-option" data-lang="nso">
+                        <span>Sepedi</span>
+                        <i class="fa-solid fa-check"></i>
+                    </button>
+                    <button class="lang-option" data-lang="sn">
+                        <span>Shona</span>
+                        <i class="fa-solid fa-check"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTAINER -->
+    <main class="main-content">
+
+        <!-- 1. HOME DASHBOARD VIEW -->
+        <section id="home-view" class="app-view active">
+            <!-- Hero Banner Card -->
+            <div class="hero-card">
+                <div class="hero-info">
+                    <h1 class="hero-title" data-translate="hero_title">Welcome to Healthy Living</h1>
+                    <p class="hero-subtitle" data-translate="hero_subtitle">Empowering you with affordable, practical ways to manage overweight and obesity. By Mmakou M.N & Sekgobela T,In Partnership with Raganya S.E</p>
+                </div>
+                <div class="hero-illustration">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                </div>
+            </div>
+
+            <!-- Dashboard Grid Section: LEARN -->
+            <div class="section-container">
+                <h2 class="section-heading" data-translate="section_learn">Understanding Weight & Obesity</h2>
+                <div class="card-grid">
+                    <!-- Card 1: What is Overweight & Obesity -->
+                    <div class="dashboard-card" onclick="app.navigateTo('obesity-intro')">
+                        <div class="card-icon icon-blue">
+                            <i class="fa-solid fa-circle-question"></i>
+                        </div>
+                        <h3 class="card-title" data-translate="card_intro_title">What is Overweight & Obesity?</h3>
+                        <p class="card-desc" data-translate="card_intro_desc">Learn the definitions and how fat accumulation impacts healthy height ratios.</p>
+                        <span class="card-action"><span data-translate="view_guide">View Guide</span> <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+
+                    <!-- Card 2: How It Occurs -->
+                    <div class="dashboard-card" onclick="app.navigateTo('how-occurs')">
+                        <div class="card-icon icon-orange">
+                            <i class="fa-solid fa-arrows-spin"></i>
+                        </div>
+                        <h3 class="card-title" data-translate="card_occur_title">How It Occurs</h3>
+                        <p class="card-desc" data-translate="card_occur_desc">Understand how energy intake, low activity levels, and stored fat connect.</p>
+                        <span class="card-action"><span data-translate="view_guide">View Guide</span> <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+
+                    <!-- Card 3: Classification (BMI) -->
+                    <div class="dashboard-card" onclick="app.navigateTo('bmi-classification')">
+                        <div class="card-icon icon-teal">
+                            <i class="fa-solid fa-calculator"></i>
+                        </div>
+                        <h3 class="card-title" data-translate="card_bmi_title">Classification & BMI</h3>
+                        <p class="card-desc" data-translate="card_bmi_desc">Determine weight categories using the Body Mass Index equation.</p>
+                        <span class="card-action"><span data-translate="view_calculator">Calculator & Chart</span> <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+
+                    <!-- Card 4: Risk Factors -->
+                    <div class="dashboard-card" onclick="app.navigateTo('risk-factors')">
+                        <div class="card-icon icon-red">
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                        </div>
+                        <h3 class="card-title" data-translate="card_risks_title">Risk Factors</h3>
+                        <p class="card-desc" data-translate="card_risks_desc">Explore stressors, poor diet, sleep deprivation, and lack of exercise.</p>
+                        <span class="card-action"><span data-translate="view_guide">View Guide</span> <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+
+                    <!-- Card 5: Complications -->
+                    <div class="dashboard-card" onclick="app.navigateTo('complications')">
+                        <div class="card-icon icon-purple">
+                            <i class="fa-solid fa-notes-medical"></i>
+                        </div>
+                        <h3 class="card-title" data-translate="card_complications_title">Complications</h3>
+                        <p class="card-desc" data-translate="card_complications_desc">Understand hypertension, diabetes mellitus, joint pain, and heart risks.</p>
+                        <span class="card-action"><span data-translate="view_guide">View Guide</span> <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+
+                    <!-- Card 6: Physical Activity -->
+                    <div class="dashboard-card" onclick="app.navigateTo('physical-activity')">
+                        <div class="card-icon icon-green">
+                            <i class="fa-solid fa-person-running"></i>
+                        </div>
+                        <h3 class="card-title" data-translate="card_activity_title">Physical Activity</h3>
+                        <p class="card-desc" data-translate="card_activity_desc">How to incorporate 150 minutes of active movements into daily routines.</p>
+                        <span class="card-action"><span data-translate="view_guide">View Guide</span> <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dashboard Grid Section: EATING WELL -->
+            <div class="section-container" style="margin-bottom: 90px;">
+                <h2 class="section-heading" data-translate="section_diet">Diet & Portion Management</h2>
+                <div class="card-grid">
+                    <!-- Card 7: Portion Sizes -->
+                    <div class="dashboard-card" onclick="app.navigateTo('portion-sizes')">
+                        <div class="card-icon icon-pink">
+                            <i class="fa-solid fa-hand-holding-heart"></i>
+                        </div>
+                        <h3 class="card-title" data-translate="card_portions_title">Portion Sizes</h3>
+                        <p class="card-desc" data-translate="card_portions_desc">Visualizing meals using your hand limits and plate divisions as guides.</p>
+                        <span class="card-action"><span data-translate="view_guide">View Guide</span> <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+
+                    <!-- Card 8: Diet Quality -->
+                    <div class="dashboard-card" onclick="app.navigateTo('diet-quality')">
+                        <div class="card-icon icon-olive">
+                            <i class="fa-solid fa-apple-whole"></i>
+                        </div>
+                        <h3 class="card-title" data-translate="card_diet_quality_title">Diet Quality & Items</h3>
+                        <p class="card-desc" data-translate="card_diet_quality_desc">Identify everyday food swaps for carbohydrates, protein, and fats.</p>
+                        <span class="card-action"><span data-translate="view_guide">View Guide</span> <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+
+                    <!-- Card 9: Healthy Recipes -->
+                    <div class="dashboard-card" onclick="app.navigateTo('recipes')">
+                        <div class="card-icon icon-gold">
+                            <i class="fa-solid fa-utensils"></i>
+                        </div>
+                        <h3 class="card-title" data-translate="card_recipes_title">Affordable Recipes</h3>
+                        <p class="card-desc" data-translate="card_recipes_desc">Step-by-step cooking methods for breakfast, snacks, lunch, and dinner.</p>
+                        <span class="card-action"><span data-translate="view_recipes">View Recipes</span> <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. DETAIL VIEW CONTAINER (DYNAMICALLY POPULATED) -->
+        <section id="detail-view" class="app-view">
+            <!-- Navigation Action Button -->
+            <button class="back-dashboard-btn" onclick="app.backToDashboard()">
+                <i class="fa-solid fa-arrow-left-long"></i>
+                <span data-translate="back_to_dashboard">Back to Dashboard</span>
+            </button>
+
+            <!-- Slide Content Shell -->
+            <div class="detail-container">
+                <div class="detail-banner" id="detail-banner-title">
+                    <!-- Title gets injected here -->
+                    <h2 class="detail-title">Topic Title</h2>
+                </div>
+
+                <div class="detail-content-layout">
+                    <!-- Left: Educational Content Cards -->
+                    <div class="detail-text-area" id="detail-text-cards">
+                        <!-- Content gets dynamically injected here -->
+                    </div>
+
+                    <!-- Right: Picture & Media Card -->
+                    <div class="detail-visual-area">
+                        <div class="visual-card">
+                            <div class="visual-header">
+                                <span class="visual-badge" data-translate="original_slide_badge">Visual</span>
+                            </div>
+                            <div class="image-wrapper" id="detail-image-container">
+                                <!-- Slides or illustration gets injected here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. CONTACT US VIEW -->
+        <section id="contact-view" class="app-view">
+            <div class="contact-container">
+                <div class="contact-header">
+                    <div class="contact-icon-bubble">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+                    <h2 class="contact-title" data-translate="contact_title">Get In Touch</h2>
+                    <p class="contact-desc" data-translate="contact_subtitle">Have any questions about managing overweight and obesity? Reach out to us for direct guidance and counseling.</p>
+                </div>
+
+                <div class="contact-details-grid">
+                    
+                    <div class="contact-detail-row">
+                        <div class="detail-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                        <div>
+                            <div class="detail-label" data-translate="contact_label_whatsapp">WhatsApp Chat</div>
+                            <div class="detail-val">084 080 8960</div>
+                        </div>
+                    </div>
+                    <div class="contact-detail-row">
+                        <div class="detail-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div>
+                            <div class="detail-label" data-translate="contact_label_email">Send Email</div>
+                            <div class="detail-val">healthylivingdaspoort@gmail.com</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-actions">
+                    
+                    
+                    <a href="https://wa.me/27837969679?text=Hi%20,%20I%20would%20like%20to%20know%20more%20about%20Healthy%20Living%20and%20obesity%20management." target="_blank" class="contact-btn btn-whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span data-translate="btn_whatsapp">WhatsApp Us</span>
+                    </a>
+                    
+                    <a href="mailto:healthylivingdaspoort@gmail.com?subject=Healthy%20Living%20Information%20Inquiry&body=Greetings%20,%0A%0AI%20was%20browsing%20the%20Healthy%20Living%20website%20and%20would%20like%20to%20ask%20for%20more%20information%20regarding%20overweight%20and%20obesity%20management.%0A%0AThank%20you!" class="contact-btn btn-email">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span data-translate="btn_email">Email Us</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- STICKY BOTTOM NAVIGATION BAR -->
+    <nav class="bottom-nav">
+        <div class="nav-container">
+            <button class="nav-item active" id="nav-home" onclick="app.switchTab('home')">
+                <i class="fa-solid fa-house"></i>
+                <span data-translate="nav_home">Home</span>
+            </button>
+            <button class="nav-item" id="nav-bmi" onclick="app.switchTab('bmi')">
+                <i class="fa-solid fa-weight-scale"></i>
+                <span data-translate="nav_bmi">BMI Cal</span>
+            </button>
+            <button class="nav-item" id="nav-basket" onclick="app.switchTab('basket')">
+                <i class="fa-solid fa-basket-shopping"></i>
+                <span data-translate="nav_basket">Food Basket</span>
+            </button>
+            <button class="nav-item" id="nav-contact" onclick="app.switchTab('contact')">
+                <i class="fa-solid fa-comment-medical"></i>
+                <span data-translate="nav_contact">Contact Us</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- INJECT JS SCRIPT -->
+    <script src="script.js"></script>
+</body>
+</html>
